@@ -1,0 +1,185 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.InstagramWrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+}
+
+.InstagramPhone
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.InstagramPhone img
+{
+    height: 50rem;
+}
+
+.InstagramContinue
+{
+    display: flex;
+    align-items: center; /*Horizontal*/
+    justify-content: space-around; /*Vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+
+.group:nth-child(1)
+{
+    min-height: 19rem;
+}
+
+.InstagramLogo
+{
+    height: 3rem;
+}
+
+.ProfilePhoto
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ProfilePhoto img
+{
+    height: 6rem;
+}
+
+.InstagramLogin
+{
+    Background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.InstagramLogout
+{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.NotAccount
+{
+    color: rgb(160, 160, 160);
+}
+
+.LinkBlue
+{
+    color: #0095f6;
+}
+
+.GetTheApp
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.Download
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.AppDownload
+{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.AppDownload:nth-child(1)
+{
+    background-image: url("Imgs/AppStore.png");
+}
+
+.AppDownload:nth-child(2)
+{
+    background-image: url("Imgs/GooglePlay.png");
+}
+
+/*media queries*/
+
+@media(max-width: 1024px)
+{
+    .InstagramWrapper
+    {
+        width: 90%;
+    }
+}
+
+@media(max-width: 650px)
+{
+    body
+    {
+        background-color: white;
+    }
+
+    .InstagramWrapper
+    {
+        width: 90%;
+    }
+
+    .InstagramPhone
+    {
+        display: none;
+    }
+
+    .InstagramContinue
+    {
+        width: 100%;
+    }
+
+    .group
+    {
+        border: 1px solid transparent;
+    }
+}
